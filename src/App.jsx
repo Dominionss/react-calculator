@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Calculator from './components/Calculator.jsx';
+import "./assets/styles/App.css";
 
 
 function App() {
 
-
     return (
-        <div>
-
+        <div className="App">
+            <Calculator />
         </div>
     );
 }
