@@ -8,7 +8,7 @@ A simple calculator built with **React** that can perform basic arithmetic opera
 
 ---
 
-![Calculator Preview](../src/assets/preview/preview.png)
+![Calculator Preview](./preview.png)
 
 ---
 
