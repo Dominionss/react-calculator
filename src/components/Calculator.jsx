@@ -21,25 +21,31 @@ function Calculator() {
 
     return(
         <div className="calculator">
-            <div className="calculator__element">
-                <h1>Simplest Working Calculator</h1>
+            <div className="calculator__element calculator__info">
+                <div className="calculator__title">Simple Calculator</div>
 
-                <h2>{result}</h2>
-                <input
-                    type="number"
+                <div className="calculator__result">
+                    Result: {result}
+                </div>
+
+                <input id="calculator__input" className="calculator__input"
                     value={inputValue}
                     onChange={handleChange}
                 />
             </div>
 
-            <div className="calculator__element">
-                <button onClick={add}>add</button>
-                <button onClick={subtract}>subtract</button>
-                <button onClick={multiply}>multiply</button>
-                <button onClick={divide}>divide</button>
+            <div className="calculator__element calculator__buttons">
+                <div className="calculator__operation_buttons">
+                    <button className="calculator__button calculator__button-operation" onClick={add}>+</button>
+                    <button className="calculator__button calculator__button-operation" onClick={subtract}>-</button>
+                    <button className="calculator__button calculator__button-operation" onClick={multiply}>x</button>
+                    <button className="calculator__button calculator__button-operation" onClick={divide}>/</button>
+                </div>
 
-                <button onClick={resetInput}>reset input</button>
-                <button onClick={resetResult}>reset result</button>
+                <div className="calculator__resets">
+                    <button className="calculator__button calculator__button-reset-input" onClick={resetInput}>Reset input</button>
+                    <button className="calculator__button calculator__button-reset-result" onClick={resetResult}>Reset result</button>
+                </div>
             </div>
 
         </div>
